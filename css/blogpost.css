@@ -34,8 +34,34 @@
     padding: 4px 0px;
     font-family: var(--font2);
 }
+
+.social svg {
+    fill: #333; 
+    width: 29px;
+    height: 29px;
+}
 .social{
-    padding-right: 53px;
+    padding-right: 50px;
     align-self: center;
     cursor: pointer;
+}
+.social a {
+    margin-right: 10px;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.social a:hover svg {
+    transform: scale(1.2); 
+    fill: #1da1f2; 
+}
+
+.social a:hover:nth-child(1) svg {
+    fill: #1da1f2; 
+}
+.social a:hover:nth-child(2) svg {
+    fill: #0e76a8;
+}
+
+.social a:hover:nth-child(3) svg {
+    fill: #3b5998; 
 }
